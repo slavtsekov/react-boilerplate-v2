@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { startLogout } from "../actions/auth";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { startLogout } from '../actions/auth';
 
 export const Header = (props) => (
     <header className="header">
@@ -10,9 +10,11 @@ export const Header = (props) => (
                 <Link className="header__title" to="/dashboard">
                     <h1>Boilerplate</h1>
                 </Link>
-                <button 
-                    className="button button--link" 
-                    onClick={props.startLogout}>
+                <button
+                    className="button button--link"
+                    type="button"
+                    onClick={props.startLogout}
+                >
                     Logout
                 </button>
             </div>
